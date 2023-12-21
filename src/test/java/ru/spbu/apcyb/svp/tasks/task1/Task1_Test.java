@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.junit.jupiter.api.Assertions;
@@ -81,7 +82,8 @@ class Task1_Test {
   }
   @Test
   void Test_Sum1000_Banknotes1_forCountOfCombination() {
-    List<List<Long>> expected = Task1.wrappingfindCombinations(1000L, Arrays.asList(1L));
+    List<List<Long>> expected = Task1.wrappingfindCombinations(1000L,
+        Collections.singletonList(1L));
     Assertions.assertEquals(1, expected.size());
   }
 
