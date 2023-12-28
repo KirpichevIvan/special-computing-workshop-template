@@ -1,0 +1,3 @@
+bar 3
+foo 4
+baz 6
